@@ -1,0 +1,23 @@
+body {
+    background: url("https://survivetheark.com/index.php?/gallery/image/12771-crystal-cavesjpg/&do=download");
+}
+.jumbotron{
+    background-color: rgba(245, 245, 245, 0.0);
+}
+strong {
+    font-size: 60px;
+}
+h2 {
+    font-size: x-large;
+}
+#Crystals_Card {
+    font-size: x-large;
+}
+.card{
+    padding: 5px;
+    background-color: rgba(245, 245, 245, 0.0);
+    
+}
+.container {
+    background-color: rgba(245, 245, 245, 0.6);
+}

@@ -4,42 +4,76 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Crystal Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+  <script src="https://code.jquery.com/jquery.js"></script>
   </head>
+<body>
+    
+  <div class="container">
   <div class="jumbotron">
     <h1 class="text-center">
       <strong>Crystal Game!</strong>
     </h1>
     <hr>
-    <div id="Instuctions" class="text-center">
-      <h2>The Goal! Is to add up a score equal to the number shown below</h2>
-      <h3>You do so by collecting (clicking) on the 4 crystals below</h3>
-      <h3>Each crystal contains a unknown amount of points, you need to guess</h3>
-      <h3>Each crystal you collect adds to your total.</h3>
-      <h3>Gain the exact amount of points to win! Go over and you lose...</h3>
+    <div id="Instuctions" class="text-left">
+      <h2>The Goal! Is to add up a score equal to the number shown below.</h2>
+      <h2>You do so by collecting (clicking) on the 4 crystals.</h2>
+      <h2>Each crystal contains a unknown amount of points, take your chances.</h2>
+      <h2>Each crystal you collect adds to your total.</h2>
+      <h2>Gain the exact amount of points to win! Go over and you lose...</h2>
       <h2>BEGIN!</h2>
     </div>
   </div>
 
+  <div class="container">
+    
+  </div>
+
   <div class="row">
     <div class="col-lg-6">
-      <!-- Controls (Superpower Grow/Shrink)-->
       <div id="Crystals_Card" class="card">
-        <h4 class="card-header">Superpowers - Change Sizes!</h4>
+        <div>Wins: <span id="wins"></span></div>
+        <div>Losses: <span id="losses"></span></div>
+        <div>Your score goal: <span class="goal"></span></div>
+        <div>Your current score: <span class="score"></span></div>
+        <h4 class="card-header">Choose your crystal!!!</h4>
         <div class="card-body">
           <div class="text-center">
-            <button class="btn btn-dark btn-lg normal-button">
-              <span class="fa fa-ok"></span> Normal</button>
-            <button class="btn btn-primary btn-lg grow-button">
-              <span class="fa fa-plus"></span> Grow</button>
-            <button class="btn btn-danger btn-lg shrink-button">
-              <span class="fa fa-minus"></span> Shrink</button>
+            <button class="btn btn-dark btn-lg normal-button crystal_buttons" id="crystal_1">
+              <img src="assets/images/crystal_1.jpg" alt ="" style="top:10px; left: 20px; z-index: -20; height: 60px"> 
+            </button>
+            <button class="btn btn-dark btn-lg normal-button crystal_buttons" id="crystal_2">
+                <img src="assets/images/crystal_2.jpg" alt ="" style="top:10px; left: 20px; z-index: -20; height: 60px"> 
+            </button>
+            <button class="btn btn-dark btn-lg normal-button crystal_buttons" id="crystal_3">
+                <img src="assets/images/crystal_3.jpg" alt ="" style="top:10px; left: 20px; z-index: -20; height: 60px"> 
+            </button>
+            <button class="btn btn-dark btn-lg normal-button crystal_buttons" id="crystal_4">
+                <img src="assets/images/crystal_4.jpg" alt ="" style="top:10px; left: 20px; z-index: -20; height: 60px"> 
+            </button>
           </div>
         </div>
       </div>
     </div>
  </div>
+</div>
+<footer>
+  <div class="container" id="footer">
+    <div class="row">Copyright &copy; 2020 Zach Hassler</div>
+    <div class="row">Photo acknowledgments: </div>
+    <div class="row">Grant Durr on Unsplash</div>
+    <div class="row">Jason D on Unsplash</div>
+    <div class="row">Kévin Langlais on Unsplash</div>
+
+  </div>
+</footer>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="assets/javascript/game.js"></script>
+</body>
+</html>

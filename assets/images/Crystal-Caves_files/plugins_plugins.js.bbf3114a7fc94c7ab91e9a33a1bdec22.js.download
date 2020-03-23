@@ -1,0 +1,1 @@
+$(document).ready(function(){null!==document.querySelector("#taCopyright")&&(document.getElementById("taCopyright").style.display="none")});;
